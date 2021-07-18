@@ -38,12 +38,7 @@ LOCAL_PROGUARD_ENABLED := disabled
 LOCAL_PACKAGE_NAME := MatLog
 LOCAL_MODULE_TAGS := optional
 LOCAL_PRIVILEGED_MODULE := true
-
-ifneq (,$(wildcard frameworks/base))
-  LOCAL_SDK_VERSION := current
-else
-  LOCAL_SDK_VERSION := system_current
-endif
+LOCAL_SDK_VERSION := system_current
 
 include $(BUILD_PACKAGE)
 
